@@ -1,0 +1,40 @@
+{
+	"name" : "appserver-io-psr/pms",
+	"description" : "PSR containing Enterprise PHP Messaging classes and interfaces.",
+	"homepage" : "https://github.com/appserver-io-psr/pms",
+	"license" : "OSL-3.0",
+	"require" : {
+		"php" : ">=5.4.0"
+	},
+	"require-dev" : {
+		"appserver-io/build" : "0.2.*"
+	},
+	"autoload" : {
+		"psr-0" : {
+			"AppserverIo\\Psr\\Pms" : [
+				"src/",
+				"tests/"
+			]
+		}
+	},
+	"config" : {
+		"github-oauth" : {
+			"github.com" : "604a3b5943228e434a5b52c2ba3cf72286d30db9"
+		}
+	},
+	"authors" : [{
+			"name" : "Tim Wagner",
+			"email" : "tw@appserver.io",
+			"homepage" : "https://github.com/wagnert",
+			"role" : "Developer"
+		}
+	],
+	"support" : {
+		"email" : "t.wagner@techdivision.com",
+		"issues" : "https://github.com/appserver-io-psr/pms/issues",
+		"source" : "https://github.com/appserver-io-psr/pms"
+	},
+	"keywords" : [
+		"php enterprise messaging"
+	]
+}
