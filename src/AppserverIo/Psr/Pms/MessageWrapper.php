@@ -48,7 +48,9 @@ class MessageWrapper implements Message
     /**
      * Injects the message we want to wrap.
      *
-     * @param AppserverIo\Psr\Pms\Message $message
+     * @param AppserverIo\Psr\Pms\Message $message The message instance
+     *
+     * @return void
      */
     public function injectMessage(Message $message)
     {
