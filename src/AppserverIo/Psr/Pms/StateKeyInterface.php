@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AppserverIo\Psr\Pms\MessageQueueException
+ * AppserverIo\Psr\Pms\StateKeyInterface
  *
  * NOTICE OF LICENSE
  *
@@ -21,7 +21,7 @@
 namespace AppserverIo\Psr\Pms;
 
 /**
- * This is the exception that is thrown if a remote method call fails.
+ * This class holds the interface for all state keys used as message state.
  *
  * @author    Tim Wagner <tw@appserver.io>
  * @copyright 2015 TechDivision GmbH <info@appserver.io>
@@ -29,6 +29,13 @@ namespace AppserverIo\Psr\Pms;
  * @link      https://github.com/appserver-io-psr/pms
  * @link      http://www.appserver.io
  */
-class MessageQueueException extends \Exception
+interface StateKeyInterface
 {
+
+    /**
+     * Returns the key value of the state key instance.
+     *
+     * @return integer The key value
+     */
+    public function getState();
 }

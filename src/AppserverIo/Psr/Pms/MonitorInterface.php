@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AppserverIo\Psr\Pms\MessageQueueException
+ * AppserverIo\Psr\Pms\MonitorInterface
  *
  * NOTICE OF LICENSE
  *
@@ -21,7 +21,7 @@
 namespace AppserverIo\Psr\Pms;
 
 /**
- * This is the exception that is thrown if a remote method call fails.
+ * Interface for all message monitors.
  *
  * @author    Tim Wagner <tw@appserver.io>
  * @copyright 2015 TechDivision GmbH <info@appserver.io>
@@ -29,6 +29,27 @@ namespace AppserverIo\Psr\Pms;
  * @link      https://github.com/appserver-io-psr/pms
  * @link      http://www.appserver.io
  */
-class MessageQueueException extends \Exception
+interface MonitorInterface
 {
+
+    /**
+     * Returns the log message.
+     *
+     * @return string The log message
+     */
+    public function getLogMessage();
+
+    /**
+     * Returns the row counter.
+     *
+     * @return integer The row counter
+     */
+    public function getRowCount();
+
+    /**
+     * Returns the target counter.
+     *
+     * @return integer The target counter
+     */
+    public function getTarget();
 }

@@ -1,3 +1,14 @@
+# Version 0.1.1
+
+## Bugfixes
+
+* None
+
+## Features
+
+* Unified the interface naming conventions
+* moved to new documentation schema
+
 # Version 0.1.0
 
 ## Bugfixes

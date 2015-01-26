@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AppserverIo\Psr\Pms\MessageQueueException
+ * AppserverIo\Psr\Pms\ResourceLocatorInterface
  *
  * NOTICE OF LICENSE
  *
@@ -21,7 +21,7 @@
 namespace AppserverIo\Psr\Pms;
 
 /**
- * This is the exception that is thrown if a remote method call fails.
+ * Interface for the resource locator instances.
  *
  * @author    Tim Wagner <tw@appserver.io>
  * @copyright 2015 TechDivision GmbH <info@appserver.io>
@@ -29,6 +29,17 @@ namespace AppserverIo\Psr\Pms;
  * @link      https://github.com/appserver-io-psr/pms
  * @link      http://www.appserver.io
  */
-class MessageQueueException extends \Exception
+interface ResourceLocatorInterface
 {
+
+    /**
+     * Tries to locate the queue that handles the request and returns the instance
+     * if one can be found.
+     *
+     * @param \AppserverIo\Psr\Pms\QueueContextInterface $queueManager The queue manager instance
+     * @param \AppserverIo\Psr\Pms\QueueInterface        $queue        The queue request
+     *
+     * @return \AppserverIo\Psr\Pms\QueueInterface The requested queue instance
+     */
+    public function locate(QueueContextInterface $queueManager, QueueInterface $queue);
 }
