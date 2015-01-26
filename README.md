@@ -6,12 +6,6 @@
 
 Contains the PHP Enterprise Messaging classes and interfaces.
 
-## Usage
-
-Coming Soon!
-
 # External Links
 
 * Documentation at [appserver.io](http://docs.appserver.io)
-* Documentation on [GitHub](https://github.com/techdivision/TechDivision_AppserverDocumentation)
-* [Getting started](https://github.com/techdivision/TechDivision_AppserverDocumentation/tree/master/docs/getting-started)
