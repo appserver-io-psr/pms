@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AppserverIo\Psr\Pms\MessageQueueException
+ * AppserverIo\Psr\Pms\QueueInterface
  *
  * NOTICE OF LICENSE
  *
@@ -21,7 +21,7 @@
 namespace AppserverIo\Psr\Pms;
 
 /**
- * This is the exception that is thrown if a remote method call fails.
+ * Interface for all queue destinations.
  *
  * @author    Tim Wagner <tw@appserver.io>
  * @copyright 2015 TechDivision GmbH <info@appserver.io>
@@ -29,6 +29,13 @@ namespace AppserverIo\Psr\Pms;
  * @link      https://github.com/appserver-io-psr/pms
  * @link      http://www.appserver.io
  */
-class MessageQueueException extends \Exception
+interface QueueInterface
 {
+
+    /**
+     * Returns the message queue name.
+     *
+     * @return string The message queue name
+     */
+    public function getName();
 }

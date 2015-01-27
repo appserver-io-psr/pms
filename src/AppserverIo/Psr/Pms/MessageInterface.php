@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AppserverIo\Psr\Pms\Message
+ * AppserverIo\Psr\Pms\MessageInterface
  *
  * NOTICE OF LICENSE
  *
@@ -11,14 +11,11 @@
  *
  * PHP version 5
  *
- * @category   Appserver
- * @package    Psr
- * @subpackage Pms
- * @author     Tim Wagner <tw@appserver.io>
- * @copyright  2014 TechDivision GmbH <info@appserver.io>
- * @license    http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
- * @link       https://github.com/appserver-io-psr/pms
- * @link       http://www.appserver.io
+ * @author    Tim Wagner <tw@appserver.io>
+ * @copyright 2015 TechDivision GmbH <info@appserver.io>
+ * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ * @link      https://github.com/appserver-io-psr/pms
+ * @link      http://www.appserver.io
  */
 
 namespace AppserverIo\Psr\Pms;
@@ -26,22 +23,19 @@ namespace AppserverIo\Psr\Pms;
 /**
  * The interface for all messages.
  *
- * @category   Appserver
- * @package    Psr
- * @subpackage Pms
- * @author     Tim Wagner <tw@appserver.io>
- * @copyright  2014 TechDivision GmbH <info@appserver.io>
- * @license    http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
- * @link       https://github.com/appserver-io-psr/pms
- * @link       http://www.appserver.io
+ * @author    Tim Wagner <tw@appserver.io>
+ * @copyright 2015 TechDivision GmbH <info@appserver.io>
+ * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ * @link      https://github.com/appserver-io-psr/pms
+ * @link      http://www.appserver.io
  */
-interface Message
+interface MessageInterface
 {
 
     /**
      * Returns the destination queue.
      *
-     * @return \AppserverIo\Psr\Pms\Queue The destination queue
+     * @return \AppserverIo\Psr\Pms\QueueInterface The destination queue
      */
     public function getDestination();
 
@@ -79,14 +73,14 @@ interface Message
     /**
      * Returns the parent message.
      *
-     * @return \AppserverIo\Psr\Pms\Message The parent message
+     * @return \AppserverIo\Psr\Pms\MessageInterface The parent message
      */
     public function getParentMessage();
 
     /**
      * Returns the message monitor.
      *
-     * @return \AppserverIo\Psr\Pms\Monitor The monitor
+     * @return \AppserverIo\Psr\Pms\MonitorInterface The monitor
      */
     public function getMessageMonitor();
 }

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AppserverIo\Psr\Pms\MessageQueueException
+ * AppserverIo\Psr\Pms\MessageListenerInterface
  *
  * NOTICE OF LICENSE
  *
@@ -21,7 +21,7 @@
 namespace AppserverIo\Psr\Pms;
 
 /**
- * This is the exception that is thrown if a remote method call fails.
+ * The interface for all message receivers.
  *
  * @author    Tim Wagner <tw@appserver.io>
  * @copyright 2015 TechDivision GmbH <info@appserver.io>
@@ -29,6 +29,17 @@ namespace AppserverIo\Psr\Pms;
  * @link      https://github.com/appserver-io-psr/pms
  * @link      http://www.appserver.io
  */
-class MessageQueueException extends \Exception
+interface MessageListenerInterface
 {
+
+    /**
+     * This function is invoked by the MessageQueue if a message
+     * related to the receiver was received.
+     *
+     * @param \AppserverIo\Psr\Pms\MessageInterface $message   The message itself
+     * @param string                                $sessionId The session ID
+     *
+     * @return void
+     */
+    public function onMessage(MessageInterface $message, $sessionId);
 }

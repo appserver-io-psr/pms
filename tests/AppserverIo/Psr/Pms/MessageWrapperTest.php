@@ -11,29 +11,23 @@
  *
  * PHP version 5
  *
- * @category   Appserver
- * @package    Psr
- * @subpackage Pms
- * @author     Tim Wagner <tw@appserver.io>
- * @copyright  2014 TechDivision GmbH <info@appserver.io>
- * @license    http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
- * @link       https://github.com/appserver-io-psr/pms
- * @link       http://www.appserver.io
+ * @author    Tim Wagner <tw@appserver.io>
+ * @copyright 2015 TechDivision GmbH <info@appserver.io>
+ * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ * @link      https://github.com/appserver-io-psr/pms
+ * @link      http://www.appserver.io
  */
 
 namespace AppserverIo\Psr\Pms;
 
 /**
- * A test implemetation for the simple message wrapper instance.
+ * A test implementation for the simple message wrapper instance.
  *
- * @category   Appserver
- * @package    Psr
- * @subpackage Pms
- * @author     Tim Wagner <tw@appserver.io>
- * @copyright  2014 TechDivision GmbH <info@appserver.io>
- * @license    http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
- * @link       https://github.com/appserver-io-psr/pms
- * @link       http://www.appserver.io
+ * @author    Tim Wagner <tw@appserver.io>
+ * @copyright 2015 TechDivision GmbH <info@appserver.io>
+ * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ * @link      https://github.com/appserver-io-psr/pms
+ * @link      http://www.appserver.io
  */
 class MessageWrapperTest extends \PHPUnit_Framework_TestCase
 {
@@ -65,8 +59,8 @@ class MessageWrapperTest extends \PHPUnit_Framework_TestCase
     {
 
         // create a mock message instance and mock all methods
-        $mockMessage = $this->getMockBuilder('AppserverIo\Psr\Pms\Message')
-                            ->setMethods(get_class_methods('AppserverIo\Psr\Pms\Message'))
+        $mockMessage = $this->getMockBuilder('AppserverIo\Psr\Pms\MessageInterface')
+                            ->setMethods(get_class_methods('AppserverIo\Psr\Pms\MessageInterface'))
                             ->getMock();
 
         // mock the getMessage() method
