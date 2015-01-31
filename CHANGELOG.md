@@ -1,3 +1,14 @@
+# Version 0.2.1
+
+## Bugfixes
+
+* None
+
+## Features
+
+* Add new JobInterface
+* Add missing methods getState() and getPriority to MessageListenerInterface
+
 # Version 0.2.0
 
 ## Bugfixes
