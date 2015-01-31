@@ -133,4 +133,24 @@ class MessageWrapper implements MessageInterface
     {
         return $this->getInjectedMessage()->getMessageMonitor();
     }
+
+    /**
+     * Returns the priority of the message.
+     *
+     * @return \AppserverIo\Psr\Pms\PriorityKeyInterface The priority of the message
+     */
+    public function getPriority()
+    {
+        return $this->getInjectedMessage()->getPriority();
+    }
+
+    /**
+     * Returns the state of the message.
+     *
+     * @return \AppserverIo\Psr\Pms\StateKeyInterface The message state
+     */
+    public function getState()
+    {
+        return $this->getInjectedMessage()->getState();
+    }
 }

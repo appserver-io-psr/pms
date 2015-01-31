@@ -40,10 +40,9 @@ interface MessageInterface
     public function getDestination();
 
     /**
-    * Returns the message id as an
-    * hash value..
+    * Returns the unique message-ID.
     *
-    * @return string The message id as hash value
+    * @return string The unique message-ID
     */
     public function getMessageId();
 
@@ -55,18 +54,18 @@ interface MessageInterface
     public function getMessage();
 
     /**
-     * Sets the unique session id.
+     * Sets the unique session-ID.
      *
-     * @param string $sessionId The uniquid id
+     * @param string $sessionId The unique session-ID
      *
      * @return void
      */
     public function setSessionId($sessionId);
 
     /**
-     * Returns the unique session id.
+     * Returns the unique session-ID.
      *
-     * @return string The uniquid id
+     * @return string The unique session-ID
      */
     public function getSessionId();
 
@@ -83,4 +82,18 @@ interface MessageInterface
      * @return \AppserverIo\Psr\Pms\MonitorInterface The monitor
      */
     public function getMessageMonitor();
+
+    /**
+     * Returns the priority of the message.
+     *
+     * @return \AppserverIo\Psr\Pms\PriorityKeyInterface The priority of the message
+     */
+    public function getPriority();
+
+    /**
+     * Returns the state of the message.
+     *
+     * @return \AppserverIo\Psr\Pms\StateKeyInterface The message state
+     */
+    public function getState();
 }
