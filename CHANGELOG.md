@@ -1,3 +1,13 @@
+# Version 2.0.0
+
+## Bugfixes
+
+* None
+
+## Features
+
+* Add addtional methods to MessageInterface
+
 # Version 1.0.0
 
 ## Bugfixes

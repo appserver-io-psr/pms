@@ -1,40 +1,42 @@
 {
-	"name" : "appserver-io-psr/pms",
-	"description" : "PSR containing Enterprise PHP Messaging classes and interfaces.",
-	"homepage" : "https://github.com/appserver-io-psr/pms",
-	"license" : "OSL-3.0",
-	"require" : {
-		"php" : ">=5.4.0"
-	},
-	"require-dev" : {
-		"appserver-io/build" : "~1.0"
-	},
-	"autoload" : {
-		"psr-0" : {
-			"AppserverIo\\Psr\\Pms" : [
-				"src/",
-				"tests/"
-			]
-		}
-	},
-	"config" : {
-		"github-oauth" : {
-			"github.com" : "bb0ca6adf013e65b1e630197308621791517b5d8"
-		}
-	},
-	"authors" : [{
-			"name" : "Tim Wagner",
-			"email" : "tw@appserver.io",
-			"homepage" : "https://github.com/wagnert",
-			"role" : "Developer"
-		}
-	],
-	"support" : {
-		"email" : "t.wagner@techdivision.com",
-		"issues" : "https://github.com/appserver-io-psr/pms/issues",
-		"source" : "https://github.com/appserver-io-psr/pms"
-	},
-	"keywords" : [
-		"php enterprise messaging"
-	]
+    "name": "appserver-io-psr/pms",
+    "description": "PSR containing Enterprise PHP Messaging classes and interfaces.",
+    "homepage": "https://github.com/appserver-io-psr/pms",
+    "license": "OSL-3.0",
+    "require": {
+        "php": ">=5.4.0",
+        "appserver-io-psr/application": "~1.0"
+    },
+    "require-dev": {
+        "appserver-io/build": "~1.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "AppserverIo\\Psr\\Pms": [
+                "src/",
+                "tests/"
+            ]
+        }
+    },
+    "config": {
+        "github-oauth": {
+            "github.com": "bb0ca6adf013e65b1e630197308621791517b5d8"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tim Wagner",
+            "email": "tw@appserver.io",
+            "homepage": "https://github.com/wagnert",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "t.wagner@techdivision.com",
+        "issues": "https://github.com/appserver-io-psr/pms/issues",
+        "source": "https://github.com/appserver-io-psr/pms"
+    },
+    "keywords": [
+        "php enterprise messaging"
+    ]
 }
