@@ -43,7 +43,7 @@ class MessageWrapperTest extends \PHPUnit_Framework_TestCase
      * Initializes the message wrapper instance we want to test.
      *
      * @return void
-     * @see PHPUnit_Framework_TestCase::setUp()
+     * @see \PHPUnit_Framework_TestCase::setUp()
      */
     protected function setUp()
     {
